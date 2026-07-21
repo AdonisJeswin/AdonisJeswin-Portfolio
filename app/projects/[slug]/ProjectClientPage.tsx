@@ -364,14 +364,14 @@ export default function ProjectClientPage({ project, nextProject }: ProjectClien
                 {project.readmeContent.split("\n").map((line, lidx) => {
                   if (line.startsWith("# ")) {
                     return (
-                      <h3 key={lidx} className="font-display text-2xl font-bold text-[#0F0F0E] mt-4 mb-3 border-b border-borderLine/20 pb-2">
+                      <h3 key={lidx} className="font-display text-2xl font-bold text-foreground mt-4 mb-3 border-b border-borderLine/20 pb-2">
                         {line.replace("# ", "")}
                       </h3>
                     );
                   }
                   if (line.startsWith("## ")) {
                     return (
-                      <h4 key={lidx} className="font-display text-lg font-bold text-[#0F0F0E] mt-5 mb-2">
+                      <h4 key={lidx} className="font-display text-lg font-bold text-foreground mt-5 mb-2">
                         {line.replace("## ", "")}
                       </h4>
                     );
