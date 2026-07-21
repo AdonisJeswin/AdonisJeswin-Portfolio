@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">RAZORPAY MILESTONE INVOICING PIPELINE</text>
+  
+  <g transform="translate(80, 140)">
+    <rect x="0" y="0" width="640" height="320" rx="10" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1.5"/>
+    <text x="35" y="45" font-family="monospace" font-size="12" font-weight="bold" fill="#0F0F0E">MILESTONE TRANSACTION LOGS</text>
+    
+    <g transform="translate(35, 80)">
+      <rect x="0" y="0" width="570" height="60" rx="6" fill="#FFFFFF" stroke="#D1C9BE" stroke-width="1"/>
+      <text x="20" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0F0F0E">Milestone 1: Foundation Laying</text>
+      <text x="380" y="35" font-family="monospace" font-size="12" fill="#6B7280">Rs. 4,50,000</text>
+      <text x="500" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="10" fill="#10B981">PAID</text>
+    </g>
+
+    <g transform="translate(35, 160)">
+      <rect x="0" y="0" width="570" height="60" rx="6" fill="#FFFFFF" stroke="#D1C9BE" stroke-width="1"/>
+      <text x="20" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0F0F0E">Milestone 2: Pillars Concrete</text>
+      <text x="380" y="35" font-family="monospace" font-size="12" fill="#6B7280">Rs. 8,20,000</text>
+      <text x="500" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="10" fill="#F59E0B">PENDING</text>
+    </g>
+  </g>
+</svg>

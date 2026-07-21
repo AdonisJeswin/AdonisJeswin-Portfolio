@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <!-- Background panel -->
+  <rect width="800" height="500" fill="#0F0F0E"/>
+  
+  <!-- Subtle circular grid line -->
+  <circle cx="400" cy="250" r="180" fill="none" stroke="#2D2D2A" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <circle cx="400" cy="250" r="100" fill="none" stroke="#2D2D2A" stroke-width="1" stroke-dasharray="2 4"/>
+  
+  <!-- Cyber shield core symbol -->
+  <g transform="translate(400, 250)">
+    <!-- Outer accent pulse -->
+    <path d="M -40,-45 L 0,-65 L 40,-45 L 40,5 L 0,35 L -40,5 Z" fill="none" stroke="#818CF8" stroke-width="2.5" opacity="0.35"/>
+    <!-- Core shield -->
+    <path d="M -30,-35 L 0,-50 L 30,-35 L 30,5 L 0,25 L -30,5 Z" fill="#818CF8" opacity="0.95"/>
+    <!-- Shield checkmark -->
+    <path d="M -10,0 L -3,7 L 12,-8" fill="none" stroke="#0F0F0E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Surrounding Network Threat Nodes -->
+  <!-- Node 1 (Green/Clean) -->
+  <g transform="translate(240, 150)">
+    <line x1="0" y1="0" x2="130" y2="55" stroke="#10B981" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle r="8" fill="#10B981"/>
+    <circle r="14" fill="none" stroke="#10B981" stroke-width="1" opacity="0.4"/>
+    <text x="15" y="4" font-family="monospace" font-size="10" fill="#10B981" font-weight="bold">URL SCAN: CLEAN</text>
+  </g>
+  
+  <!-- Node 2 (Red/Intrusion) -->
+  <g transform="translate(560, 160)">
+    <line x1="0" y1="0" x2="-130" y2="40" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle r="10" fill="#EF4444"/>
+    <circle r="18" fill="none" stroke="#EF4444" stroke-width="1" opacity="0.4"/>
+    <text x="-155" y="4" font-family="monospace" font-size="10" fill="#EF4444" font-weight="bold">IDS FLAG: FLOOD ATTACK</text>
+  </g>
+  
+  <!-- Node 3 (Yellow/Anomaly) -->
+  <g transform="translate(300, 360)">
+    <line x1="0" y1="0" x2="70" y2="-75" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle r="8" fill="#F59E0B"/>
+    <circle r="14" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.4"/>
+    <text x="-120" y="4" font-family="monospace" font-size="10" fill="#F59E0B" font-weight="bold">ANOMALY: 74%</text>
+  </g>
+
+  <!-- Node 4 (Blue/Transformers) -->
+  <g transform="translate(500, 350)">
+    <line x1="0" y1="0" x2="-70" y2="-65" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle r="8" fill="#818CF8"/>
+    <circle r="14" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4"/>
+    <text x="15" y="4" font-family="monospace" font-size="10" fill="#818CF8" font-weight="bold">NLP CLASS: SPAM</text>
+  </g>
+  
+  <!-- Terminal Console Text -->
+  <text x="30" y="50" font-family="monospace" font-size="12" fill="#F7F5F0" font-weight="bold">GuardianAG Console v1.0.4</text>
+  <text x="30" y="70" font-family="monospace" font-size="10" fill="#6B7280">> Initializing 6 microservice engines...</text>
+  <text x="30" y="90" font-family="monospace" font-size="10" fill="#10B981">> All ML classification nodes online [OK]</text>
+</svg>

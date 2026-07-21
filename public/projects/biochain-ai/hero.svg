@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <rect width="1200" height="800" fill="#F7F5F0"/>
+  <!-- Grid -->
+  <g stroke="#0F0F0E" stroke-width="0.5" opacity="0.05">
+    <path d="M 0,100 L 1200,100 M 0,200 L 1200,200 M 0,300 L 1200,300 M 0,400 L 1200,400 M 0,500 L 1200,500 M 0,600 L 1200,600 M 0,700 L 1200,700"/>
+    <path d="M 150,0 L 150,800 M 300,0 L 300,800 M 450,0 L 450,800 M 600,0 L 600,800 M 750,0 L 750,800 M 900,0 L 900,800 M 1050,0 L 1050,800"/>
+  </g>
+
+  <!-- Web dApp Container -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="700" height="640" rx="16" fill="#FFFFFF" stroke="#D1C9BE" stroke-width="1.5" />
+    <rect x="0" y="0" width="700" height="60" rx="16" fill="#0F0F0E"/>
+    <text x="30" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#F7F5F0">BIOCHAIN AI 2.0</text>
+    <rect x="520" y="15" width="150" height="30" rx="15" fill="#6366F1"/>
+    <text x="595" y="34" font-family="monospace" font-size="10" fill="#F7F5F0" text-anchor="middle" font-weight="bold">CONNECTED: 0x6E19...c3E</text>
+
+    <!-- Patient vitals card -->
+    <g transform="translate(40, 100)">
+      <rect x="0" y="0" width="620" height="150" rx="12" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1" />
+      <text x="25" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" fill="#0F0F0E">PATIENT MEDICAL VITAL FEED (LIVE WEBSOCKETS)</text>
+      
+      <!-- Vital elements -->
+      <text x="25" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280">Heart rate</text>
+      <text x="25" y="120" font-family="monospace" font-size="24" font-weight="bold" fill="#EF4444">74 bpm</text>
+
+      <text x="180" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280">Blood oxygen</text>
+      <text x="180" y="120" font-family="monospace" font-size="24" font-weight="bold" fill="#3B82F6">98% SpO2</text>
+
+      <text x="340" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280">Body temperature</text>
+      <text x="340" y="120" font-family="monospace" font-size="24" font-weight="bold" fill="#10B981">98.6 °F</text>
+    </g>
+
+    <!-- Smart Contract Consent Audit -->
+    <g transform="translate(40, 280)">
+      <rect x="0" y="0" width="620" height="320" rx="12" fill="#FFFFFF" stroke="#D1C9BE" stroke-width="1" />
+      <text x="25" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" fill="#0F0F0E">SOLIDITY CONSENT VERIFIER LOG</text>
+      
+      <!-- Code panel simulation -->
+      <rect x="25" y="60" width="570" height="230" rx="8" fill="#0f0f0e"/>
+      <text x="45" y="95" font-family="monospace" font-size="11" fill="#10B981">contract PatientConsent {</text>
+      <text x="65" y="120" font-family="monospace" font-size="11" fill="#F7F5F0">mapping(address =&gt; AccessRule) public access;</text>
+      <text x="65" y="145" font-family="monospace" font-size="11" fill="#F7F5F0">function grantAccess(address provider) public {</text>
+      <text x="85" y="170" font-family="monospace" font-size="11" fill="#6366F1">access[provider] = AccessRule({ granted: true });</text>
+      <text x="85" y="195" font-family="monospace" font-size="11" fill="#6B7280">emit AccessGranted(msg.sender, provider);</text>
+      <text x="65" y="220" font-family="monospace" font-size="11" fill="#F7F5F0">}</text>
+      <text x="45" y="245" font-family="monospace" font-size="11" fill="#10B981">}</text>
+    </g>
+  </g>
+
+  <!-- MetaMask Floating Notification Dialog -->
+  <g transform="translate(820, 180)">
+    <rect x="0" y="0" width="300" height="400" rx="16" fill="#FFFFFF" stroke="#F59E0B" stroke-width="3" />
+    <rect x="0" y="0" width="300" height="50" rx="16" fill="#F7F5F0" border-bottom="1px solid #D1C9BE" />
+    <circle cx="35" cy="25" r="12" fill="#F59E0B" opacity="0.2"/>
+    <text x="35" y="29" font-family="system-ui, sans-serif" font-weight="black" font-size="14" fill="#F59E0B" text-anchor="middle">🦊</text>
+    <text x="60" y="30" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0F0F0E">MetaMask Notification</text>
+
+    <text x="25" y="90" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" fill="#0F0F0E">Confirm Signature Request</text>
+    <text x="25" y="120" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280" leading="1.5">You are signing a smart contract transaction to grant access credentials to: Dr. James (Provider Node: 0x4B2...e32)</text>
+
+    <!-- Details Box -->
+    <rect x="20" y="180" width="260" height="100" rx="8" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1"/>
+    <text x="35" y="210" font-family="monospace" font-size="10" fill="#0f0f0e">Gas Limit: 45000</text>
+    <text x="35" y="235" font-family="monospace" font-size="10" fill="#0f0f0e">Estimated fee: 0.00042 ETH</text>
+    <text x="35" y="260" font-family="monospace" font-size="10" fill="#10B981">Network: Goerli Testnet</text>
+
+    <!-- Buttons -->
+    <rect x="20" y="315" width="115" height="40" rx="8" fill="#EAE6DF" />
+    <text x="77" y="338" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0F0F0E" text-anchor="middle">REJECT</text>
+
+    <rect x="165" y="315" width="115" height="40" rx="8" fill="#F59E0B" />
+    <text x="222" y="338" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">SIGN</text>
+  </g>
+</svg>

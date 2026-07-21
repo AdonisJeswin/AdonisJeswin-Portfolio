@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F7F5F0;
+  --foreground: #0F0F0E;
+  --accent: #4F46E5;
+  --accent-rgb: 79, 70, 229;
+  --muted: #6B7280;
+  --border: #D1C9BE;
+  --card-bg: rgba(255, 255, 255, 0.4);
+  --card-border: rgba(15, 15, 14, 0.08);
+}
+
+[data-theme="dark"] {
+  --background: #0F0F0E;
+  --foreground: #F7F5F0;
+  --accent: #818CF8;
+  --accent-rgb: 129, 140, 248;
+  --muted: #9CA3AF;
+  --border: #2D2D2A;
+  --card-bg: rgba(15, 15, 14, 0.6);
+  --card-border: rgba(247, 245, 240, 0.08);
+}
+
+[data-theme="dark"] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+body, nav, button, select, input, a, div, h1, h2, h3, h4, h5, p, span, svg, section {
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, fill 0.4s ease, stroke 0.4s ease;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  /* High-end fractal noise paper/linen texture */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Custom selection */
+::selection {
+  background-color: rgba(var(--accent-rgb), 0.15);
+  color: var(--foreground);
+}
+
+/* Focus visible styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* Glassmorphism elements */
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+}
+
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Text styles */
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains), monospace;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dropdown option styles for clean color contrast in Linen & Carbon modes */
+select option {
+  background-color: var(--background);
+  color: var(--foreground);
+}

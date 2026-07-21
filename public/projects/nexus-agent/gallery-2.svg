@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">NODE CONFIGURATION PANEL</text>
+  <!-- Node fields -->
+  <g transform="translate(80, 130)">
+    <text x="0" y="20" font-family="monospace" font-size="12" fill="#6B7280">System variables configuration</text>
+    <rect x="0" y="40" width="640" height="40" rx="6" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1"/>
+    <text x="20" y="65" font-family="monospace" font-size="12" fill="#0F0F0E">temperature = 0.7</text>
+
+    <rect x="0" y="100" width="640" height="40" rx="6" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1"/>
+    <text x="20" y="125" font-family="monospace" font-size="12" fill="#0F0F0E">max_tokens = 4096</text>
+
+    <rect x="0" y="160" width="640" height="180" rx="6" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1"/>
+    <text x="20" y="190" font-family="monospace" font-size="12" fill="#0f0f0e">JSON Schema constraints:</text>
+    <text x="20" y="220" font-family="monospace" font-size="11" fill="#6B7280">{</text>
+    <text x="40" y="240" font-family="monospace" font-size="11" fill="#6B7280">"type": "object",</text>
+    <text x="40" y="260" font-family="monospace" font-size="11" fill="#6B7280">"properties": { "status": { "type": "string" } },</text>
+    <text x="40" y="280" font-family="monospace" font-size="11" fill="#6B7280">"required": ["status"]</text>
+    <text x="20" y="300" font-family="monospace" font-size="11" fill="#6B7280">}</text>
+  </g>
+</svg>

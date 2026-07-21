@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">DATABASE CLUSTER NODES</text>
+  <!-- Render cluster nodes -->
+  <rect x="100" y="150" width="180" height="100" rx="8" fill="#F7F5F0" stroke="#10B981" stroke-width="2"/>
+  <text x="120" y="195" font-family="monospace" font-size="12" font-weight="bold" fill="#0F0F0E">DB_NODE_01</text>
+  <text x="120" y="220" font-family="monospace" font-size="10" fill="#6B7280">Role: Master (98% ok)</text>
+
+  <rect x="320" y="150" width="180" height="100" rx="8" fill="#F7F5F0" stroke="#10B981" stroke-width="2"/>
+  <text x="340" y="195" font-family="monospace" font-size="12" font-weight="bold" fill="#0F0F0E">DB_NODE_02</text>
+  <text x="340" y="220" font-family="monospace" font-size="10" fill="#6B7280">Role: Replica (healthy)</text>
+  
+  <rect x="540" y="150" width="180" height="100" rx="8" fill="#F7F5F0" stroke="#EF4444" stroke-width="2"/>
+  <text x="560" y="195" font-family="monospace" font-size="12" font-weight="bold" fill="#0F0F0E">DB_NODE_03</text>
+  <text x="560" y="220" font-family="monospace" font-size="10" fill="#6B7280">Role: Replica (Spike!)</text>
+
+  <path d="M 280,200 L 320,200 M 500,200 L 540,200" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">CONSTRUX MOBILE WORKER LOGS</text>
+  
+  <g transform="translate(100, 130)">
+    <rect x="0" y="0" width="260" height="360" rx="20" fill="#0F0F0E"/>
+    <rect x="10" y="10" width="240" height="340" rx="14" fill="#FFFFFF" />
+    
+    <text x="25" y="45" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" fill="#0F0F0E">Time Card Summary</text>
+    <line x1="25" y1="58" x2="215" y2="58" stroke="#D1C9BE" stroke-width="1"/>
+    
+    <!-- Logs -->
+    <text x="25" y="90" font-family="monospace" font-size="11" fill="#6b6b6b">Mon: 09:02am — 05:15pm</text>
+    <text x="25" y="115" font-family="monospace" font-size="11" fill="#10B981">Verified: DeepFace OK</text>
+    
+    <text x="25" y="150" font-family="monospace" font-size="11" fill="#6b6b6b">Tue: 08:58am — 05:32pm</text>
+    <text x="25" y="175" font-family="monospace" font-size="11" fill="#10B981">Verified: DeepFace OK</text>
+    
+    <text x="25" y="210" font-family="monospace" font-size="11" fill="#6b6b6b">Wed: 09:12am — In progress</text>
+    <text x="25" y="235" font-family="monospace" font-size="11" fill="#4F46E5">Geofence locked: active</text>
+  </g>
+</svg>

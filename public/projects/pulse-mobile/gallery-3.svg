@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">ACCESSIBLE SLEEP METRIC CHARTS</text>
+  <!-- Sleep graph visual layout -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="600" height="300" rx="16" fill="#F7F5F0" stroke="#D1C9BE" stroke-width="1"/>
+    
+    <!-- Sleep cycle path -->
+    <path d="M 50,150 Q 150,50 250,220 T 450,80 T 550,150" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Accessibility label guides -->
+    <rect x="220" y="235" width="60" height="30" rx="6" fill="#0F0F0E"/>
+    <text x="250" y="254" font-family="monospace" font-size="10" fill="#F7F5F0" text-anchor="middle">REM</text>
+    
+    <rect x="420" y="35" width="60" height="30" rx="6" fill="#0F0F0E"/>
+    <text x="450" y="54" font-family="monospace" font-size="10" fill="#F7F5F0" text-anchor="middle">DEEP</text>
+  </g>
+</svg>

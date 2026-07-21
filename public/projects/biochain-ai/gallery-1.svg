@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#D1C9BE" stroke-width="1.5"/>
+  <text x="50" y="70" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#0F0F0E">MULTI-ROLE HEALTHCARE WORKSPACE</text>
+  
+  <!-- Dashboards grid -->
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="220" height="150" rx="8" fill="#F7F5F0" stroke="#6366F1" stroke-width="1.5"/>
+    <text x="20" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#6366F1">PATIENT CARD</text>
+    <text x="20" y="70" font-family="monospace" font-size="11" fill="#0F0F0E">Manage consent</text>
+    <text x="20" y="95" font-family="monospace" font-size="11" fill="#0F0F0E">Read diagnostic records</text>
+
+    <rect x="250" y="0" width="220" height="150" rx="8" fill="#F7F5F0" stroke="#10B981" stroke-width="1.5"/>
+    <text x="270" y="35" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#10B981">DOCTOR CONSOLE</text>
+    <text x="270" y="70" font-family="monospace" font-size="11" fill="#0F0F0E">Initiate WebSocket vitals</text>
+    <text x="270" y="95" font-family="monospace" font-size="11" fill="#0F0F0E">Request record access</text>
+
+    <rect x="0" y="180" width="470" height="200" rx="8" fill="#0F0F0E"/>
+    <text x="30" y="45" font-family="monospace" font-size="12" fill="#10B981">IPFS Storage Node status:</text>
+    <text x="30" y="85" font-family="monospace" font-size="11" fill="#F7F5F0">• Encrypted payload size: 2.4 MB</text>
+    <text x="30" y="115" font-family="monospace" font-size="11" fill="#F7F5F0">• IPFS CID: QmYwAPJznvXJ...tWJ</text>
+  </g>
+</svg>
